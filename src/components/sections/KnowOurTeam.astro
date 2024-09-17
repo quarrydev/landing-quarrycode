@@ -1,17 +1,40 @@
 ---
 import Title from "../shared/Title.astro";
 import Paragraph from "../shared/Paragraph.astro";
+import Container from "../shared/Container.astro";
+import Person from "../cards/Person.astro";
 
 ---
 
 <section>
-	<div class="flex flex-col">
-		<img src="https://nserc-hi-am.ca/2023/wp-content/uploads/sites/21/2022/04/285-2855863_a-festival-celebrating-tractors-round-profile-picture-placeholder.png" 
-			alt="profile picture">
-		<Title>Name</Title>
-		<Paragraph>Lead dev</Paragraph>
-		<div>
-			<img src="" alt="">
+	<Container>
+		<div class="text-center">
+			<div class="mt-5 mb-10">
+				<Title>Conoce a Nuestro Equipo</Title>
+			</div>
+
+			<div class="flex flex-col gap-7 items-center">
+				<div class="flex midmd:flex-col flex-col justify-center gap-10 ">
+					<div class="flex flex-col items-center justify-center">
+						<Paragraph className="font-bold mb-2 midmd:mb-0 text-2xl md:text-3xl">Ventas</Paragraph>
+						<div class="flex flex-col midmd:flex-row justify-center gap-4">
+							<Person title="Aldo Moralez" description="Director de proyectos"/>
+							<Person title="Benjamín Gómez" description="Director de ventas"/>
+							<Person title="Alejandro Gaitán" description="Ejecutivo de cuentas"/>
+						</div>
+					</div>
+					<div class="flex flex-col items-center justify-center">
+						<Paragraph className="font-bold mb-2 midmd:mb-0 text-2xl md:text-3xl">Desarrollo</Paragraph>
+						<div class="flex flex-col midmd:flex-row justify-center gap-4">
+							<Person title="Tony Ramírez" description="Desarrollador Móvil"/>
+							<Person title="Rodolfo Pinedo" description="Desarrollador Backend"/>
+							<Person title="Daniel Martínez" description="Desarrollador Frontend"/>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-	</div>
+		
+	</Container>
+
 </section>
