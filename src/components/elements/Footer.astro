@@ -3,79 +3,24 @@ import GroupFooterNav from "../blocks/GroupFooterNav.astro";
 import Container from "../shared/Container.astro";
 import FooterNav from "../shared/FooterNav.astro";
 import Paragraph from "../shared/Paragraph.astro";
-const footerNav1 = [
-    {
-        itemText:"Marketing",
-        itemLink:"#"
-    },
-    {
-        itemText:"Analylitics",
-        itemLink:"#"
-    },
-    {
-        itemText:"Commerce",
-        itemLink:"#"
-    },
-    {
-        itemText:"Insights",
-        itemLink:"#"
-    }
-]
-
-const footerSupport = [
-    {
-        itemText:"Pricing",
-        itemLink:"#"
-    },
-    {
-        itemText:"Guides",
-        itemLink:"#"
-    },
-    {
-        itemText:"FAQ",
-        itemLink:"#"
-    },
-    {
-        itemText:"Contact",
-        itemLink:"#"
-    }
-]
 
 const footerCompany = [
-    {
-        itemText:"About",
-        itemLink:"/about"
-    },
-    {
-        itemText:"Blog",
-        itemLink:"#"
-    },
-    {
-        itemText:"Jobs",
-        itemLink:"#"
-    },
-    {
-        itemText:"Parteners",
-        itemLink:"#"
-    },
-    {
-        itemText:"Jobs",
-        itemLink:"#"
-    }
+    { itemText:"Services", itemLink:"#services" },
+    { itemText:"About Us", itemLink:"#about-us" },
+    { itemText:"Features", itemLink:"#features" },
 ]
+
+const footerContact = [
+    { itemText:"Sales", itemLink:"mailto:benja@quarrytech.net" },
+    { itemText:"Support", itemLink:"mailto:aldo@quarrytech.net" },
+    { itemText:"Development", itemLink:"mailto:tony@quarrytech.net" },
+]
+
 const footerLegal = [
-    {
-        itemText:"Claim",
-        itemLink:"/#"
-    },
-    {
-        itemText:"Privacy",
-        itemLink:"#"
-    },
-    {
-        itemText:"Terms",
-        itemLink:"#"
-    }
+    // { itemText:"Pricing", itemLink:"#" },
+    { itemText:"Claim", itemLink:"#" },
+    { itemText:"Privacy", itemLink:"#" },
+    { itemText:"Terms", itemLink:"#" }
 ]
 ---
 <div class="mt-16"></div>
@@ -110,7 +55,7 @@ const footerLegal = [
     <Container className="pb-8 relative overflow-auto">
         
         <span class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 blur-2xl opacity-20 w-24 h-16 sm:w-48 sm:h-36 rounded-full rotate-12 skew-x-6 bg-primary"></span>
-        <div class="grid grid-cols-2 lg:grid-cols-3 lg:items-stretch gap-8 relative">
+        <div class="grid grid-cols-2 lg:grid-cols-4 lg:items-stretch gap-8 relative">
             <div class="col-span-2 lg:col-span-1 h-auto flex flex-col">
                 <div class="h-full">
                     <a href="#" class="relative flex items-center gap-3">
@@ -163,24 +108,20 @@ const footerLegal = [
 
             <GroupFooterNav>
                 <FooterNav title={"Company"} navItems={footerCompany}/>
-                <FooterNav title={"Solutions"} navItems={footerNav1}/>
             </GroupFooterNav>
-
             <GroupFooterNav>
-                <FooterNav title={"Support"} navItems={footerSupport}/>
+                <FooterNav title={"Company"} navItems={footerContact}/>
+            </GroupFooterNav>
+            <GroupFooterNav>
                 <FooterNav title={"Ressources"} navItems={footerLegal}/>
             </GroupFooterNav>
-
         </div>
     </Container>
     <div class=" bg-gradient-to-tl from-box-bg py-2 relative">
         <Container>
-            <div class="flex justify-between items-center gap-6 md:text-lg text-heading-3">
+            <div class="flex justify-center items-center gap-6 md:text-lg text-heading-3">
                 <div>
-                    &copy; <span id="year"></span> AgenceX. All right reserved
-                </div>
-                <div>
-                    Proudly made by <a href="https://github.com/johnkat-mj" target="_blank" class="font-semibold">John Kat</a>
+                    &copy; <span id="year"></span> QuarryCode. Todos os derechos reservados.
                 </div>
             </div>
         </Container>
