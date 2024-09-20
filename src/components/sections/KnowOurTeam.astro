@@ -3,38 +3,65 @@ import Title from "../shared/Title.astro";
 import Paragraph from "../shared/Paragraph.astro";
 import Container from "../shared/Container.astro";
 import Person from "../cards/Person.astro";
-
 ---
 
 <section>
-	<Container>
-		<div class="text-center">
-			<div class="mt-5 mb-10">
-				<Title>Conoce a Nuestro Equipo</Title>
-			</div>
+  <Container>
+    <div class="text-center">
+      <div class="mt-5 mb-10">
+        <Title>Conoce a Nuestro Equipo</Title>
+      </div>
 
-			<div class="flex flex-col gap-7 items-center">
-				<div class="flex midmd:flex-col flex-col justify-center gap-10 ">
-					<div class="flex flex-col items-center justify-center">
-						<Paragraph className="font-bold mb-2 midmd:mb-0 text-2xl md:text-3xl">Ventas</Paragraph>
-						<div class="flex flex-col midmd:flex-row justify-center gap-4">
-                            <Person title="Aldo Morales" description="Director de proyectos" avatar="https://randomuser.me/api/portraits/men/80.jpg"/>
-							<Person title="Benjamín Gómez" description="Director de ventas" avatar="https://randomuser.me/api/portraits/men/45.jpg"/>
-							<Person title="Alejandro Gaitán" description="Ejecutivo de cuentas" avatar="https://randomuser.me/api/portraits/men/81.jpg"/>
-						</div>
-					</div>
-					<div class="flex flex-col items-center justify-center">
-						<Paragraph className="font-bold mb-2 midmd:mb-0 text-2xl md:text-3xl">Desarrollo</Paragraph>
-						<div class="flex flex-col midmd:flex-row justify-center gap-4">
-							<Person title="Tony Ramírez" description="Desarrollador Móvil" avatar="/avatars/tony.jpeg"/>
-							<Person title="Rodolfo Pinedo" description="Desarrollador Backend" avatar="/avatars/rodo.png" />
-							<Person title="Daniel Martínez" description="Desarrollador Frontend" avatar="https://randomuser.me/api/portraits/men/39.jpg"/>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-	</Container>
-
+      <div class="flex flex-col gap-7 items-center">
+        <div class="flex midmd:flex-col flex-col justify-center gap-10">
+          <div class="flex flex-col items-center justify-center">
+            <Paragraph
+              className="font-bold mb-2 midmd:mb-0 text-2xl md:text-3xl"
+              >Ventas</Paragraph
+            >
+            <div class="flex flex-col midmd:flex-row justify-center gap-4">
+              <Person
+                title="Aldo Morales"
+                description="Director de proyectos"
+                avatar="https://randomuser.me/api/portraits/men/80.jpg"
+              />
+              <Person
+                title="Benjamín Gómez"
+                description="Director de ventas"
+                avatar="https://randomuser.me/api/portraits/men/45.jpg"
+              />
+              <Person
+                title="Alejandro Gaitán"
+                description="Ejecutivo de cuentas"
+                avatar="https://randomuser.me/api/portraits/men/81.jpg"
+              />
+            </div>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <Paragraph
+              className="font-bold mb-2 midmd:mb-0 text-2xl md:text-3xl"
+              >Desarrollo</Paragraph
+            >
+            <div class="flex flex-col midmd:flex-row justify-center gap-4">
+              <Person
+                title="Tony Ramírez"
+                description="Desarrollador Móvil"
+                avatar="/avatars/tony.jpeg"
+              />
+              <Person
+                title="Rodolfo Pinedo"
+                description="Desarrollador Backend"
+                avatar="/avatars/rodo.png"
+              />
+              <Person
+                title="Daniel Martínez"
+                description="Desarrollador Frontend"
+                avatar="https://randomuser.me/api/portraits/men/39.jpg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Container>
 </section>
