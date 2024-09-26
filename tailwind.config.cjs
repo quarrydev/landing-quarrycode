@@ -5,8 +5,8 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				body: "rgb(var(--color-bg))",
-				"box-bg": "rgb(var(--color-box))",
+				body: "rgb(var(--background-3))",
+				"box-bg": "rgb(var(--secondary-3))",
 				"box-shadow": "rgb(var(--box-sd))",
 				"box-border": "rgb(var(--box-border))",
 				primary: "#1d4ed8",
